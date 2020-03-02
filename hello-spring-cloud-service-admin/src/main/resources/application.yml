@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: hello-spring-cloud-service-admin
+
+server:
+  port: 7004
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7003/eureka/

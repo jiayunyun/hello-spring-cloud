@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: hello-spring-cloud-web-admin-ribbon
+
+server:
+  port: 7006
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7003/eureka/

@@ -1,0 +1,31 @@
+# Project exclude paths
+/hello-spring-cloud-admin-feign/target/
+/hello-spring-cloud-eureka/target/
+/hello-spring-cloud-service-admin/target/
+/hello-spring-cloud-web-admin-ribbon/target/
+!.mvn/wrapper/maven-wrapper.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### JRebel ###
+rebel.xml
+
+### MAC ###
+.DS_Store
+
+### Other ###
+logs/
+temp/
+*/out
