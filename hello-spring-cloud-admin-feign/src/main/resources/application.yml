@@ -13,3 +13,9 @@ eureka:
 feign:
   hystrix:
     enable: true
+    command:
+      default:
+        execution:
+          timeout:
+            enable: fales  #解决超时问题（方案一：关闭请求时间限制）
+

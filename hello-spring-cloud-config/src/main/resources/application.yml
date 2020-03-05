@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: hello-spring-cloud-config
+  cloud:
+    config:
+      label: master
+      server:
+        git: https://github.com/jiayunyun/spring-cloud-config.git
+        search-paths: respo
+        username: jy163lovefamily@163.com
+        password: jiayunyun0755
+
+server:
+  port: 8888
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7003/eureka/
