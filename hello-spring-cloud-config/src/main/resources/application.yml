@@ -5,14 +5,13 @@ spring:
     config:
       label: master
       server:
-        git: https://github.com/jiayunyun/spring-cloud-config.git
-        search-paths: respo
-        username: jy163lovefamily@163.com
-        password: jiayunyun0755
-
+        git:
+          uri: https://github.com/jiayunyun/spring-cloud-config.git
+          search-paths: respo
+          username: jy163lovefamily@163.com
+          password: jiayunyun0755
 server:
   port: 8888
-
 eureka:
   client:
     service-url:
