@@ -1,7 +1,9 @@
 # Project exclude paths
 /hello-spring-cloud-admin-feign/target/
+/hello-spring-cloud-config/target/
 /hello-spring-cloud-eureka/target/
 /hello-spring-cloud-service-admin/target/
+/hello-spring-cloud-zuul/target/
 /hello-spring-cloud-web-admin-ribbon/target/
 !.mvn/wrapper/maven-wrapper.jar
 
