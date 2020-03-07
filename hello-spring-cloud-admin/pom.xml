@@ -10,7 +10,7 @@
         <relativePath>../hello-spring-cloud-dependences/pom.xml</relativePath>
     </parent>
 
-    <artifactId>hello-spring-cloud-web-admin-feign</artifactId>
+    <artifactId>hello-spring-cloud-admin</artifactId>
     <packaging>jar</packaging>
 
     <dependencies>
@@ -34,6 +34,15 @@
         </dependency>
         <!-- Spring Boot End -->
 
+        <dependency>
+            <groupId>org.jolokia</groupId>
+            <artifactId>jolokia-core</artifactId>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/de.codecentric/spring-boot-admin-starter-server -->
+        <dependency>
+            <groupId>de.codecentric</groupId>
+            <artifactId>spring-boot-admin-starter-server</artifactId>
+        </dependency>
         <!-- Spring Cloud Begin -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -41,25 +50,13 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-openfeign</artifactId>
+            <artifactId>spring-cloud-starter-zipkin</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-config</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-zipkin</artifactId>
-        </dependency>
         <!-- Spring Cloud End -->
-        <dependency>
-            <groupId>org.jolokia</groupId>
-            <artifactId>jolokia-core</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>de.codecentric</groupId>
-            <artifactId>spring-boot-admin-starter-client</artifactId>
-        </dependency>
     </dependencies>
 
     <build>
@@ -68,7 +65,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>hello.spring.cloud.feign.WebAdminFeignApplication</mainClass>
+                    <mainClass>hello.spring.cloud.admin.AdminApplication</mainClass>
                 </configuration>
             </plugin>
         </plugins>
