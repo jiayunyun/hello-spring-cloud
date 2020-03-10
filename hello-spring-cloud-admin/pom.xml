@@ -38,7 +38,6 @@
             <groupId>org.jolokia</groupId>
             <artifactId>jolokia-core</artifactId>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/de.codecentric/spring-boot-admin-starter-server -->
         <dependency>
             <groupId>de.codecentric</groupId>
             <artifactId>spring-boot-admin-starter-server</artifactId>
