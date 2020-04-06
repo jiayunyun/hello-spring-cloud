@@ -13,7 +13,6 @@ public class RedisController {
 
     @RequestMapping(value = "put",method = RequestMethod.POST)
     public  String put(String key,String value,long seconds){
-        System.out.println("参数为key:"+key+"--value:"+value+"--secends:"+seconds);
          redisService.put(key,value,seconds);
 
          return "0k";
